@@ -39,11 +39,15 @@ To use the vis4d package, you need to put your config as part of your method pac
 ├── pyproject.toml
 ```
 
-- Note that you need to update [the name of the project](./pyproject.toml#17) in `pyproject.toml` from `vis4d-template` to your own method name to install the package correctly.
+- Note that you need to update `vis4d-template` to your own method name in `pyproject.toml` to install the package correctly.
 
 ```bash
-# Install the package
 pip install -e . -v
+```
+
+- To lint the package, you can update `vis4d-template` to your own method name in `scripts/lint.sh` and run the following command:
+```bash
+bash scripts/lint.sh
 ```
 
 ## Running the new method
