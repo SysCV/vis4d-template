@@ -30,4 +30,6 @@
     "files.watcherExclude": {
         "node_modules": true
     },
+    "python.analysis.indexing": false,
+    // "python.analysis.logLevel": "Trace",
 }

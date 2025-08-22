@@ -61,7 +61,7 @@ doc/media
 # python build
 build/
 dist/
-scalabel.egg-info
+vis4d-template.egg-info
 
 # coverage
 .coverage*

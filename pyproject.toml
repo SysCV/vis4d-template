@@ -9,14 +9,18 @@ line-length = 79
 profile = "black"
 line_length = 79
 
-[tool.flake8]
-# Ignore only the import related errors because isort handles them.
-ignore = "I100, I201"
+[tool.pyright]
+include = ["vis4d-template"]
+typeCheckingMode = "off"
 
 [project]
 name = "vis4d-template"
 description = "Template repository for vis4d."
 version = "0.0.0"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 include = ["vis4d-template*"]

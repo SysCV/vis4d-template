@@ -42,7 +42,7 @@ To use the vis4d package, you need to put your config as part of your method pac
 - Note that you need to update `vis4d-template` to your own method name in `pyproject.toml` to install the package correctly.
 
 ```bash
-pip install -e . -v
+pip install -e .
 ```
 
 - To lint the package, you can update `vis4d-template` to your own method name in `scripts/lint.sh` and run the following command:
@@ -54,8 +54,8 @@ bash scripts/lint.sh
 After install the package, you can run the method using the following command:
 ```bash
 # Train
-vis4d-pl fit --config YOUR_METHOD_NAME/zoo/config1.py ...
+vis4d fit --config YOUR_METHOD_NAME/zoo/config1.py ...
 
 # Test
-vis4d-pl test --config YOUR_METHOD_NAME/zoo/config1.py ...
+vis4d test --config YOUR_METHOD_NAME/zoo/config1.py ...
 ```
